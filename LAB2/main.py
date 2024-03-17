@@ -289,30 +289,55 @@ input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input
 
+numbers_list = [int(num) for num in input_numbers.split()]
+
 # Manipulate List
+
+numbers_list.append(10)  # Append 10 to the list
+numbers_list.insert(2, 20)  # Insert 20 at index 2
+if 8 in numbers_list:
+    numbers_list.remove(8)  # Remove the element 8 if it exists
 
 # Attempt to Modify Tuple (this will raise an error)
 
+numbers_tuple = tuple(numbers_list)
+try:
+    numbers_tuple.append(10)  # Attempt to append to tuple
+except AttributeError:
+    print("Tuples are immutable and cannot be modified.")
+
 # Set Operations
 
+numbers_set = set(numbers_list)
+other_set = {10, 11, 12}
+set_union = numbers_set.union(other_set)  # Union of sets
+set_intersection = numbers_set.intersection(other_set)  # Intersection of sets
+set_difference = numbers_set.difference(other_set)  # Difference of sets
+
+
 # Dictionary Operations
+numbers_dict = {num: num ** 2 for num in numbers_list}  # Creating dictionary
 print("Original Dictionary:", numbers_dict)
-# Add a new key-value pair
-# Delete an existing key-value pair
+
+numbers_dict[11] = 121
+
+# Delete an existing key-value pair from the dictionary
+if 8 in numbers_dict:
+    del numbers_dict[8]
 
 # Type Conversion
-# list_to_tuple =
-# list_to_set =
-# list_to_dict =
-# tuple_to_list =
-# tuple_to_set =
-# tuple_to_dict =
-# set_to_list =
-# set_to_tuple =
-# set_to_dict =
-# dict_to_list =
-# dict_to_tuple =
-# dict_to_set =
+list_to_tuple = tuple(numbers_list)
+list_to_set = set(numbers_list)
+list_to_dict = {num: num ** 2 for num in numbers_list}
+tuple_to_list = list(numbers_tuple)
+tuple_to_set = set(numbers_tuple)
+tuple_to_dict = {num: num ** 2 for num in numbers_tuple}
+set_to_list = list(numbers_set)
+set_to_tuple = tuple(numbers_set)
+set_to_dict = {num: num ** 2 for num in numbers_set}
+dict_to_list = list(numbers_dict.keys())
+dict_to_tuple = tuple(numbers_dict.keys())
+dict_to_set = set(numbers_dict.keys())
 
 # Print Output
 print("List to Tuple:", list_to_tuple)
