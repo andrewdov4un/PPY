@@ -1,24 +1,26 @@
-Original List: [1, 2, 20, 3, 10]
-Original Tuple: (1, 2, 20, 3, 10)
-Original Set: {1, 2, 3, 10, 20}
-Original Dictionary: {1: 1, 2: 4, 20: 400, 3: 9, 10: 100}
+Original List: [5, 2, 20, 1, 9, 10]
+Original Tuple: (5, 2, 20, 1, 9, 10)
+Original Set: {1, 2, 5, 9, 10, 20}
+Original Dictionary: {5: 25, 2: 4, 20: 400, 1: 1, 9: 81, 10: 100}
 
-Manipulated List: [1, 2, 20, 3, 10]
-Manipulated Tuple: (1, 2, 20, 3, 10)
-Union of Set: {1, 2, 3, 20, 10, 11, 12}
+Manipulated List: [5, 2, 20, 1, 9, 10]
+Manipulated Tuple: (5, 2, 20, 1, 9, 10)
+Union of Set: {1, 2, 5, 9, 10, 11, 12, 20}
 Intersection of Set: {10}
-Difference of Set: {1, 2, 3, 20}
-Updated Dictionary: {1: 1, 2: 4, 20: 400, 3: 9, 10: 100}
+Difference of Set: {1, 2, 5, 9, 20}
+Updated Dictionary: {5: 25, 2: 4, 20: 400, 1: 1, 9: 81, 10: 100}
 
-List to Tuple: (1, 2, 20, 3, 10)
-List to Set: {1, 2, 3, 10, 20}
-List to Dictionary: {1: 1, 2: 4, 20: 400, 3: 9, 10: 100}
-Tuple to List: [1, 2, 20, 3, 10]
-Tuple to Set: {1, 2, 3, 10, 20}
-Tuple to Dictionary: {1: 1, 2: 4, 20: 400, 3: 9, 10: 100}
-Set to List: [1, 2, 3, 10, 20]
-Set to Tuple: (1, 2, 3, 10, 20)
-Set to Dictionary: {1: 1, 2: 4, 3: 9, 10: 100, 20: 400}
-Dictionary to List: [1, 2, 20, 3, 10]
-Dictionary to Tuple: (1, 2, 20, 3, 10)
-Dictionary to Set: {1, 2, 3, 10, 20}
+List to Tuple: (5, 2, 20, 1, 9, 10)
+List to Set: {1, 2, 5, 9, 10, 20}
+List to Dictionary: {5: 25, 2: 4, 20: 400, 1: 1, 9: 81, 10: 100}
+Tuple to List: [5, 2, 20, 1, 9, 10]
+Tuple to Set: {1, 2, 5, 9, 10, 20}
+Tuple to Dictionary: {5: 25, 2: 4, 20: 400, 1: 1, 9: 81, 10: 100}
+Set to List: [1, 2, 5, 9, 10, 20]
+Set to Tuple: (1, 2, 5, 9, 10, 20)
+Set to Dictionary: {1: 1, 2: 4, 5: 25, 9: 81, 10: 100, 20: 400}
+Dictionary to List: [5, 2, 20, 1, 9, 10]
+Dictionary to Tuple: (5, 2, 20, 1, 9, 10)
+Dictionary to Set: {1, 2, 5, 9, 10, 20}
+Largest prime number: 20
+
